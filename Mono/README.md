@@ -19,7 +19,7 @@ Git checkout mono source from github and build
 	
 or execute bash script
 
-	bash <(curl -s https://raw.githubusercontent.com/melvinlee/knowledge-based-101.git/master/compile-mono.sh)
+	bash <(curl -s https://raw.githubusercontent.com/melvinlee/knowledge-based-101/master/Mono/compile-mono.sh)
 		
 Note: if you are using Ubuntu 15.04 or later, you also need to install the libtool-bin package.
 
