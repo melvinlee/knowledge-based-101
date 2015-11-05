@@ -19,6 +19,19 @@
 
 Always get latest version from http://origin-download.mono-project.com/sources/mono
 
+###Debian/Ubuntu
+
+	apt-get install -y git autoconf automake libtool g++ gettext make
+	cd /usr/local/src 
+	wget http://origin-download.mono-project.com/sources/mono/mono-4.2.1.91.tar.bz2
+	tar jxf mono-4.2.1.91.tar.bz2
+	cd mono-4.2.1
+	./configure --prefix=/opt/mono
+	make && make install
+
+	export PATH=$PATH:/opt/mono/bin
+	export PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig
+
 
 ## Building Mono from source
 
