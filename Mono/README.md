@@ -1,4 +1,24 @@
-# Compiling Mono on Linux 
+# Mono
+
+## How to install from Source
+
+###Centos
+
+	yum install bison gettext glib2 freetype fontconfig libpng libpng-devel libX11 libX11-devel glib2-devel libgdi* libexif glibc-devel urw-fonts java unzip gcc gcc-c++ automake autoconf libtool make bzip2 wget -y
+
+	cd /usr/local/src 
+	wget http://origin-download.mono-project.com/sources/mono/mono-4.2.1.91.tar.bz2
+	tar jxf mono-4.2.1.91.tar.bz2
+	cd mono-4.2.1
+	./configure --prefix=/opt/mono
+	make && make install
+
+	export PATH=$PATH:/opt/mono/bin
+	export PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig
+
+
+Always get latest version from http://origin-download.mono-project.com/sources/mono
+
 
 ## Building Mono from source
 
