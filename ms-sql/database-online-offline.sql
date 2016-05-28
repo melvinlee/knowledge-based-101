@@ -1,0 +1,13 @@
+--Go Offline
+USE master
+GO
+ALTER DATABASE DatabaseName
+SET OFFLINE WITH ROLLBACK IMMEDIATE
+GO
+
+-- Go Online
+USE master
+GO
+ALTER DATABASE DatabaseName
+SET ONLINE
+GO
